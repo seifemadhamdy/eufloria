@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/Assets/Icon/Dark/eufloria.svg"
+    />
+    <title>Eufloria | FAQ</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <style>
+      input[type="search"]::-webkit-search-cancel-button {
+        -webkit-appearance: none;
+        width: 1.5rem;
+        height: 1.5rem;
+        background: url(/Assets/Icon/Ui/close-outline.svg);
+      }
+
+      .form-control:focus {
+        box-shadow: 0 0 0.25rem 0.125rem #006555;
+      }
+
+      .newsLetter-control:focus {
+        box-shadow: 0 0 0.25rem 0.125rem #f857b5;
+      }
+
+      .accordion-button {
+        font-size: large;
+        font-weight: 500;
+      }
+
+      .accordion-button:focus {
+        box-shadow: 0 0 0.25rem 0.125rem #006555;
+      }
+
+      .accordion-button:not(.collapsed) {
+        color: black;
+        background-color: transparent;
+      }
+
+      .accordion-button:not(.collapsed)::after {
+        background-image: url("Assets/Icon/Ui/chevron-up-outline.svg");
+        transform: rotate(360deg);
+      }
+
+      .accordion-button.collapsed::after {
+        background-image: url("Assets/Icon/Ui/chevron-down-outline.svg");
+      }
+
+      ion-icon {
+        font-size: 1.5rem;
+      }
+
+      .footer-link {
+        color: #00a88f;
+        opacity: 0.6;
+      }
+
+      .footer-link:hover {
+        color: #00a88f;
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <nav class="navbar navbar-expand-sm navbar-light p-16">
+      <div class="container">
+        <a class="navbar-brand p-0" href="home.html" style="width: 25%">
+          <img
+            src="Assets/Logo/Hybrid/Colored/Dark/Eufloria.svg"
+            alt="Eufloria"
+            class="brand_logo"
+          />
+        </a>
+        <div style="display: flex">
+          <a
+            class="btn text-dark p-0"
+            href="#"
+            role="button"
+            style="border-radius: 0rem; margin-right: 0.5rem"
+            ><div style="display: flex">
+              <ion-icon
+                name="log-in-outline"
+                style="padding-right: 0.25rem"
+              ></ion-icon
+              >Login
+            </div></a
+          >
+          <div class="vr" style="background-color: black"></div>
+          <a
+            class="btn text-dark p-0"
+            href="#"
+            role="button"
+            style="border-radius: 0rem; margin-left: 0.5rem"
+            >العربية</a
+          >
+        </div>
+      </div>
+    </nav>
+    <nav
+      class="navbar navbar-expand-lg navbar-light pt-0 pb-16 pl-16 pr-16"
+      style="border-bottom: 1px solid rgba(0, 0, 0, 0.1)"
+    >
+      <div class="container">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav" id="navItemGroup">
+            <li class="nav-item">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                style="padding: 0rem 1rem 0rem 0rem"
+              >
+                Flowers & Plants
+              </a>
+              <div
+                class="dropdown-menu w-100 mt-0"
+                aria-labelledby="navbarDropdown"
+                style="
+                  border-radius: 1rem;
+                  border-top-left-radius: 0;
+                  border-top-right-radius: 0;
+                  border: 1px solid rgba(0, 0, 0, 0.1);
+                "
+              >
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-6 col-lg-3">
+                      <div class="list-group list-group-flush">
+                        <h6
+                          class="font-weight-bold dropdown-header p-0"
+                          style="margin: 0.5rem 0rem; color: #97326d"
+                        >
+                          Product Type
+                        </h6>
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Only Flowers</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Hand-Tied Bouquets</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Letterbox</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Flowers in Baskets</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Plants</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Flowers in Vases</a
+                        >
+                      </div>
+                    </div>
+                    <div
+                      class="col-md-6 col-lg-3"
+                      style="padding-bottom: 0.5rem"
+                    >
+                      <div class="list-group list-group-flush">
+                        <h6
+                          class="font-weight-bold dropdown-header p-0"
+                          style="margin: 0.5rem 0rem; color: #97326d"
+                        >
+                          Flower Type
+                        </h6>
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Roses</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Lilies</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Tulips</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Hydrangea</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Carnations</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Chrysanthemums</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Baby Roses</a
+                        >
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                      <div class="list-group list-group-flush">
+                        <h6
+                          class="font-weight-bold dropdown-header p-0"
+                          style="margin: 0.5rem 0rem; color: #97326d"
+                        >
+                          Flower Color
+                        </h6>
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Red</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >White</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Purple</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Yellow</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Pink</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Blue</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Orange</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Peach</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Fuchsia</a
+                        >
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                      <div class="list-group list-group-flush">
+                        <h6
+                          class="font-weight-bold dropdown-header p-0"
+                          style="margin: 0.5rem 0rem; color: #97326d"
+                        >
+                          Occasions
+                        </h6>
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Happy Birthday</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >I Love You</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Get Well Soon</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Congratulations</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Anniversary</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >New Baby</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                style="padding: 0rem 1rem 0rem 0rem"
+              >
+                Gifts & Bundles
+              </a>
+              <div
+                class="dropdown-menu w-100 mt-0"
+                aria-labelledby="navbarDropdown"
+                style="
+                  border-radius: 1rem;
+                  border-top-left-radius: 0;
+                  border-top-right-radius: 0;
+                  border: 1px solid rgba(0, 0, 0, 0.1);
+                "
+              >
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-6 col-lg-3">
+                      <div class="list-group list-group-flush">
+                        <h6
+                          class="font-weight-bold dropdown-header p-0"
+                          style="margin: 0.5rem 0rem; color: #97326d"
+                        >
+                          Food & Drink
+                        </h6>
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Dates</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Coffee and tea</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Letterbox</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Chocolates</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Cakes</a
+                        >
+                      </div>
+                    </div>
+                    <div
+                      class="col-md-6 col-lg-3"
+                      style="padding-bottom: 0.5rem"
+                    >
+                      <div class="list-group list-group-flush">
+                        <h6
+                          class="font-weight-bold dropdown-header p-0"
+                          style="margin: 0.5rem 0rem; color: #97326d"
+                        >
+                          Fragrance & Beauty
+                        </h6>
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Bath & Body</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Perfume</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Candles & Diffusers</a
+                        >
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                      <div class="list-group list-group-flush">
+                        <h6
+                          class="font-weight-bold dropdown-header p-0"
+                          style="margin: 0.5rem 0rem; color: #97326d"
+                        >
+                          Jewelry
+                        </h6>
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Watches</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Jewelry</a
+                        >
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                      <div class="list-group list-group-flush">
+                        <h6
+                          class="font-weight-bold dropdown-header p-0"
+                          style="margin: 0.5rem 0rem; color: #97326d"
+                        >
+                          More
+                        </h6>
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Flowers and Jewelry</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Baby & Toys</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >For Him</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >For Her</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Electronics</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="d-flex" style="width: 256px">
+          <input class="form-control border rounded-pill" type="search"
+          placeholder="Search our catalog" id=search-input"
+          style="margin-right:0.5rem"/>
+          <button
+            class="btn btn-outline-dark border rounded-pill"
+            type="button"
+          >
+            <ion-icon name="search-outline" style="display: flex"></ion-icon>
+          </button>
+        </div>
+        <ion-icon
+          name="menu"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          class="navbar-toggler p-0"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          style="border: 0rem"
+        ></ion-icon>
+      </div>
+    </nav>
+    <div class="container my-5">
+      <h2 class="special-heading">Refund, Cancellation and Return Policy</h2>
+      <div
+        class="accordion accordion-flush"
+        id="accordionFlushExample"
+        style="border: 1px solid rgba(0, 0, 0, 0.1)"
+      >
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseOne"
+              aria-expanded="false"
+              aria-controls="flush-collapseOne"
+            >
+              Compensation and Refund Policy
+            </button>
+          </h2>
+          <div
+            id="flush-collapseOne"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingOne"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              Your satisfaction is our priority, with 100% Customer Satisfaction
+              Guarantee with every flower arrangement and gift we deliver to
+              your beloved ones! If - for any reason - you are not satisfied
+              with the arrangement that we have delivered, we will provide a
+              replacement as soon as possible. If you do not require a
+              replacement, you may be eligible for a partial refund in the form
+              of Eufloria credit which will be available for use for up to 12
+              months. You also may be offered compensation. For any issue
+              regarding your order, please contact Eufloria Customer Care Centre
+              within 48 hours of the delivery and we will offer you multiple
+              solutions. Our team might ask you to send a picture of the
+              received items to better understand the issue and find the best
+              solution for you. We guarantee your order will be delivered on
+              time! If your order is delayed by more than 4 hours after the end
+              of your timeslot, please contact Eufloria customer service and
+              they will assist you accordingly. This policy will not be
+              applicable for orders delayed for reasons outside of our control.
+              In case the recipient information provided by you was incorrect,
+              Eufloria will not be held responsible for any refund and/or
+              compensation arising from delays or deliveries to the wrong person
+              or address. Eufloria shall not be responsible for the refusal of
+              the recipient to receive a gift/arrangement. When a bank refund is
+              applied, such refunds will be done only through the original mode
+              of payment of the credit or debit cards used in placing orders
+              through the online payment gateway on Eufloria Platforms. We will
+              do our best to process your refund promptly. However, when the
+              bank is involved this cannot be controlled by Eufloria. Any
+              Eufloria credit refunds or compensation will take up to 24 hours
+              to show in your Eufloria wallet.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseTwo"
+              aria-expanded="false"
+              aria-controls="flush-collapseTwo"
+            >
+              Cancellation Policy
+            </button>
+          </h2>
+          <div
+            id="flush-collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingTwo"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              If an order is cancelled 24 hours before the start of the delivery
+              slot or if the recipient is refusing the order prior to receiving
+              the location of delivery (before delivery and preparing of the
+              order), we will do our best to process your cancellation request
+              which might be eligible for 100% refund. However, the moment we
+              receive your request, our team starts to prepare and coordinate
+              the best quality gifts and flowers for you. It is sometimes very
+              difficult to get cancellation requests complete, due to the fact
+              that our network ranges throughout the country and that upon
+              receiving your request we start preparing for your order to make
+              sure it is delivered on time, therefore it is very difficult to
+              stop or cancel a delivery attempt or a placed order for orders
+              that are already under preparation.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseThree"
+              aria-expanded="false"
+              aria-controls="flush-collapseThree"
+            >
+              Rescheduling Orders
+            </button>
+          </h2>
+          <div
+            id="flush-collapseThree"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingThree"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              We understand that in some circumstances you might request your
+              order to be rescheduled, and we will do our best to accommodate
+              your request. In cases where your order was not prepared yet, you
+              will be able to reschedule the order for up to a maximum of 10
+              days. Otherwise, you will be able to reschedule your order for not
+              more than 48hr later so that we can guarantee that the best
+              quality products are delivered.<br /><br />
+              <b
+                >Please note that all edible and brand items are excluded from
+                this rescheduling option</b
+              >
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingfour">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapsefour"
+              aria-expanded="false"
+              aria-controls="flush-collapsefour"
+            >
+              Return Policy
+            </button>
+          </h2>
+          <div
+            id="flush-collapsefour"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingfour"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              If you are dissatisfied with our product quality and you wish to
+              return the delivered items, please contact our customer care team
+              through our platforms to schedule a pick-up within 48hrs of
+              delivery. Depending on the country in which the products were to
+              be delivered, you will have up to 48 hours to return the
+              product(s), Eufloria return policy will be in line with applicable
+              laws of the country. Please make sure that Items received are
+              unopen, unworn, unused, and in the original packaging with the
+              tags still attached. We do not currently offer exchanges; however,
+              we do offer full refunds on eligible returns whereby the received
+              product is damaged upon delivery. We offer a 1-day return policy
+              for jewelry and things that have been in contact with skin and
+              perfume, which should be in its original, sealed condition. After
+              Eufloria receives the request and checks the quality of the
+              product to be returned, you will receive an email confirming if
+              your return request was approved and how long it will take to
+              receive the refund.<br /><br />
+              <b
+                >*Please note that the following items are excluded from this
+                return policy: flowers, underwear, beauty, grooming, earrings,
+                candles, Software, video games, fresh produce, custom orders,
+                and all edible items.</b
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="special-heading" style="margin-top: 1rem">
+        Terms and Conditions
+      </h2>
+      <div
+        class="accordion accordion-flush"
+        id="accordionFlushExample"
+        style="border: 1px solid rgba(0, 0, 0, 0.1)"
+      >
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingFour">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseFour"
+              aria-expanded="false"
+              aria-controls="flush-collapseFour"
+            >
+              Ratification of the Agreement
+            </button>
+          </h2>
+          <div
+            id="flush-collapseFour"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingFour"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              To be a member of the website of Eufloria.com, first of all it is
+              required that you fill in the registration form and then agree and
+              undertake to comply with the provisions of the user agreement for
+              Eufloria.com. By filling in and ratifying the registration form or
+              getting any services or ordering a product using this system, the
+              user agrees to be bound by the user agreement of Eufloria. You are
+              responsible for making all arrangements necessary for you to have
+              access to the website. You are also responsible for ensuring that
+              all persons who access the website through your Internet
+              connection are aware of these website terms and that they comply
+              with them. By viewing, using, accessing, browsing, or submitting
+              any content or material on the site, you agree to these Terms of
+              Use as a binding legal agreement between you and Eufloria.com,
+              without limitation or qualification. The term "you" or "You" shall
+              refer to any person or entity, who views, uses, accesses, browses
+              or submits any content or material to the site. If you do not
+              agree to these Terms of Use, then you may not use the site.
+              Eufloria.com reserves the right to modify these Terms of Use at
+              any time without prior notice. You agree that each visit you make
+              to the sites shall be subject to the then-current Terms of Use,
+              and continued use of the site now or following modifications in
+              these Terms of Use confirms that you have read, accepted, and
+              agreed to be bound by such modifications. The terms and conditions
+              apply to Eufloria.com website and its associated applications on
+              iPhone, Android, and mobile site platforms
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingFive">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseFive"
+              aria-expanded="false"
+              aria-controls="flush-collapseFive"
+            >
+              How to make an order and how it is processed
+            </button>
+          </h2>
+          <div
+            id="flush-collapseFive"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingFive"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              Once you have selected your order from the product you will be
+              given the opportunity to submit your order by clicking on
+              "Checkout" button. Please note it is important that you check the
+              information that you enter and correct any errors before clicking
+              on the "Checkout" button since once you click on this input errors
+              cannot be corrected. On receipt of your order, Eufloria.com will
+              begin processing your order and we will send a message on the
+              final page that your order has been received and sent successfully
+              to the provided delivery address. Where any payment you make is
+              not authorized you will be returned to the previous page on the
+              website and we shall not be obliged to provide the services.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingSix">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseSix"
+              aria-expanded="false"
+              aria-controls="flush-collapseSix"
+            >
+              Order Cancellation
+            </button>
+          </h2>
+          <div
+            id="flush-collapseSix"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingSix"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              You have the right to cancel an order up to 5 minutes from placing
+              the order on our website. While every effort is made to ensure
+              that accurate pricing and descriptions are maintained, we reserve
+              the right to cancel any order that is based on inaccurate
+              information. An order may be subsequently cancelled by Eufloria
+              after you have received a confirmation and Eufloria reserve the
+              right to cancel any order, before or after acceptance, and will
+              notify you immediately of any such cancellation.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingSeven">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseSeven"
+              aria-expanded="false"
+              aria-controls="flush-collapseSeven"
+            >
+              Membership system for Eufloria
+            </button>
+          </h2>
+          <div
+            id="flush-collapseSeven"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingSeven"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              Any member of Eufloria has a "user name" and "password" which are
+              determined by the member herself/himself. The "user name" is
+              personal to the member and the same "user name" is not given to
+              two different members. The "password" is only known by the user.
+              The user can change the password at any time. It is solely under
+              the responsibility of the user to select and protect the password.
+              Eufloria is not liable for any problems, which may arise from the
+              use of password. Eufloria informs the user about the promotions,
+              which take place in the user’s area and from which the user may
+              benefit, by emails. Eufloria does not share the user information
+              with the third party companies –For the user to connect to the
+              services, which require a membership of Eufloria, the user must
+              enter the user name and password. This process is called "login"
+              to Eufloria.com. By using this site, you warrant that any personal
+              information provided by you is true, accurate, current and
+              complete in all respects and that you will notify us immediately
+              of any changes to your personal information by updating your
+              member profile on the site or by contacting us, you agree not to
+              impersonate any other person or entity or to use a false name or a
+              name that you are not authorized to use. You are not allowed to
+              register multiple memberships for use by the same person.
+              Violation of this clause may result in termination of your
+              membership. Members' passwords should be kept confidential at all
+              times, and must not be shared or disclosed to anyone. You are
+              responsible for all activities and orders that occur or are
+              submitted through your membership. If you know or suspect that
+              someone has knowledge of your password then you should contact us
+              immediately. You may not use the site for any unlawful or
+              unauthorized purpose, including without limitation to:
+              distributing any unlawful, libelous, abusive, threatening,
+              harmful, obscene or otherwise objectionable material transmitting
+              material that constitutes a criminal offense, results in civil
+              liability or otherwise breaches any laws, regulations or codes of
+              practice. Interfering with any other persons use or enjoyment of
+              the site. Damaging, disabling or impairing the operation of this
+              site or attempting to gain unauthorized access to this site or to
+              networks connected to it, through hacking, spoofing or other such
+              similar means.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="background-color: #190912">
+      <footer class="container py-4">
+        <div class="row">
+          <div class="col">
+            <h6 class="display-6" style="color: #f857b5">Get to Know Us</h6>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="about-us.html" class="nav-link p-0 footer-link"
+                  >About Us</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 footer-link">Careers</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="faq.html" class="nav-link p-0 footer-link">FAQ</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="contact-us.html" class="nav-link p-0 footer-link"
+                  >Contact Us</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a
+                  href="terms-and-conditions.html"
+                  class="nav-link p-0 footer-link"
+                  >Terms & Conditions</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link p-0 footer-link">Partner With Us</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col">
+            <form>
+              <h6 class="display-6" style="color: #f857b5">Join The Bunch</h6>
+              <p class="lead" style="color: rgba(255, 255, 255, 0.6)">
+                Never miss out on our exclusive offers and promotions by
+                subscribing to our monthly digest.
+              </p>
+              <div class="d-flex">
+                <input class="form-control border rounded-pill
+                newsLetter-control" type="email" placeholder="Email address"
+                id=newsletter-input" style="margin-right:0.5rem"/>
+                <button
+                  class="btn btn-outline-light border rounded-pill"
+                  type="submit"
+                  onclick="validate()"
+                >
+                  Subscribe
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </footer>
+      <div style="border-top: 1px solid rgba(255, 255, 255, 0.1)">
+        <footer
+          class="d-flex flex-wrap justify-content-between align-items-center py-4 container"
+        >
+          <div class="col-md-4 d-flex align-items-center">
+            <a
+              href="/"
+              class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1"
+            >
+              <img
+                src="Assets/Icon/Light/eufloria.svg"
+                alt="Euphoria"
+                style="
+                  width: 3rem;
+                  filter: brightness(0) saturate(100%) invert(100%) sepia(100%)
+                    saturate(0%) hue-rotate(181deg) brightness(103%)
+                    contrast(105%);
+                  opacity: 0.38;
+                "
+              />
+            </a>
+            <span class="mb-3 mb-md-0" style="color: rgba(255, 255, 255, 0.38)"
+              >© 2022 Eufloria, Inc</span
+            >
+          </div>
+
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3">
+              <a href="#" style="color: rgba(255, 255, 255, 0.38)"
+                ><ion-icon name="logo-twitter"></ion-icon
+              ></a>
+            </li>
+            <li class="ms-3">
+              <a href="#" style="color: rgba(255, 255, 255, 0.38)"
+                ><ion-icon name="logo-instagram"></ion-icon
+              ></a>
+            </li>
+            <li class="ms-3">
+              <a href="#" style="color: rgba(255, 255, 255, 0.38)"
+                ><ion-icon name="logo-facebook"></ion-icon
+              ></a>
+            </li>
+          </ul>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

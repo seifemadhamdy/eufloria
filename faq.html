@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/Assets/Icon/Dark/eufloria.svg"
+    />
+    <title>Eufloria | FAQ</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <style>
+      input[type="search"]::-webkit-search-cancel-button {
+        -webkit-appearance: none;
+        width: 1.5rem;
+        height: 1.5rem;
+        background: url(/Assets/Icon/Ui/close-outline.svg);
+      }
+
+      .form-control:focus {
+        box-shadow: 0 0 0.25rem 0.125rem #006555;
+      }
+
+      .newsLetter-control:focus {
+        box-shadow: 0 0 0.25rem 0.125rem #f857b5;
+      }
+
+      .accordion-button {
+        font-size: large;
+        font-weight: 500;
+      }
+
+      .accordion-button:focus {
+        box-shadow: 0 0 0.25rem 0.125rem #006555;
+      }
+
+      .accordion-button:not(.collapsed) {
+        color: black;
+        background-color: transparent;
+      }
+
+      .accordion-button:not(.collapsed)::after {
+        background-image: url("Assets/Icon/Ui/chevron-up-outline.svg");
+        transform: rotate(360deg);
+      }
+
+      .accordion-button.collapsed::after {
+        background-image: url("Assets/Icon/Ui/chevron-down-outline.svg");
+      }
+
+      ion-icon {
+        font-size: 1.5rem;
+      }
+
+      .footer-link {
+        color: #00a88f;
+        opacity: 0.6;
+      }
+
+      .footer-link:hover {
+        color: #00a88f;
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <nav class="navbar navbar-expand-sm navbar-light p-16">
+      <div class="container">
+        <a class="navbar-brand p-0" href="home.html" style="width: 25%">
+          <img
+            src="Assets/Logo/Hybrid/Colored/Dark/Eufloria.svg"
+            alt="Eufloria"
+            class="brand_logo"
+          />
+        </a>
+        <div style="display: flex">
+          <a
+            class="btn text-dark p-0"
+            href="#"
+            role="button"
+            style="border-radius: 0rem; margin-right: 0.5rem"
+            ><div style="display: flex">
+              <ion-icon
+                name="log-in-outline"
+                style="padding-right: 0.25rem"
+              ></ion-icon
+              >Login
+            </div></a
+          >
+          <div class="vr" style="background-color: black"></div>
+          <a
+            class="btn text-dark p-0"
+            href="#"
+            role="button"
+            style="border-radius: 0rem; margin-left: 0.5rem"
+            >العربية</a
+          >
+        </div>
+      </div>
+    </nav>
+    <nav
+      class="navbar navbar-expand-lg navbar-light pt-0 pb-16 pl-16 pr-16"
+      style="border-bottom: 1px solid rgba(0, 0, 0, 0.1)"
+    >
+      <div class="container">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav" id="navItemGroup">
+            <li class="nav-item">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                style="padding: 0rem 1rem 0rem 0rem"
+              >
+                Flowers & Plants
+              </a>
+              <div
+                class="dropdown-menu w-100 mt-0"
+                aria-labelledby="navbarDropdown"
+                style="
+                  border-radius: 1rem;
+                  border-top-left-radius: 0;
+                  border-top-right-radius: 0;
+                  border: 1px solid rgba(0, 0, 0, 0.1);
+                "
+              >
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-6 col-lg-3">
+                      <div class="list-group list-group-flush">
+                        <h6
+                          class="font-weight-bold dropdown-header p-0"
+                          style="margin: 0.5rem 0rem; color: #97326d"
+                        >
+                          Product Type
+                        </h6>
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Only Flowers</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Hand-Tied Bouquets</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Letterbox</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Flowers in Baskets</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Plants</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Flowers in Vases</a
+                        >
+                      </div>
+                    </div>
+                    <div
+                      class="col-md-6 col-lg-3"
+                      style="padding-bottom: 0.5rem"
+                    >
+                      <div class="list-group list-group-flush">
+                        <h6
+                          class="font-weight-bold dropdown-header p-0"
+                          style="margin: 0.5rem 0rem; color: #97326d"
+                        >
+                          Flower Type
+                        </h6>
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Roses</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Lilies</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Tulips</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Hydrangea</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Carnations</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Chrysanthemums</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Baby Roses</a
+                        >
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                      <div class="list-group list-group-flush">
+                        <h6
+                          class="font-weight-bold dropdown-header p-0"
+                          style="margin: 0.5rem 0rem; color: #97326d"
+                        >
+                          Flower Color
+                        </h6>
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Red</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >White</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Purple</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Yellow</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Pink</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Blue</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Orange</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Peach</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Fuchsia</a
+                        >
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                      <div class="list-group list-group-flush">
+                        <h6
+                          class="font-weight-bold dropdown-header p-0"
+                          style="margin: 0.5rem 0rem; color: #97326d"
+                        >
+                          Occasions
+                        </h6>
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Happy Birthday</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >I Love You</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Get Well Soon</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Congratulations</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Anniversary</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >New Baby</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                style="padding: 0rem 1rem 0rem 0rem"
+              >
+                Gifts & Bundles
+              </a>
+              <div
+                class="dropdown-menu w-100 mt-0"
+                aria-labelledby="navbarDropdown"
+                style="
+                  border-radius: 1rem;
+                  border-top-left-radius: 0;
+                  border-top-right-radius: 0;
+                  border: 1px solid rgba(0, 0, 0, 0.1);
+                "
+              >
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-6 col-lg-3">
+                      <div class="list-group list-group-flush">
+                        <h6
+                          class="font-weight-bold dropdown-header p-0"
+                          style="margin: 0.5rem 0rem; color: #97326d"
+                        >
+                          Food & Drink
+                        </h6>
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Dates</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Coffee and tea</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Letterbox</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Chocolates</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Cakes</a
+                        >
+                      </div>
+                    </div>
+                    <div
+                      class="col-md-6 col-lg-3"
+                      style="padding-bottom: 0.5rem"
+                    >
+                      <div class="list-group list-group-flush">
+                        <h6
+                          class="font-weight-bold dropdown-header p-0"
+                          style="margin: 0.5rem 0rem; color: #97326d"
+                        >
+                          Fragrance & Beauty
+                        </h6>
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Bath & Body</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Perfume</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Candles & Diffusers</a
+                        >
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                      <div class="list-group list-group-flush">
+                        <h6
+                          class="font-weight-bold dropdown-header p-0"
+                          style="margin: 0.5rem 0rem; color: #97326d"
+                        >
+                          Jewelry
+                        </h6>
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Watches</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Jewelry</a
+                        >
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                      <div class="list-group list-group-flush">
+                        <h6
+                          class="font-weight-bold dropdown-header p-0"
+                          style="margin: 0.5rem 0rem; color: #97326d"
+                        >
+                          More
+                        </h6>
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Flowers and Jewelry</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Baby & Toys</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >For Him</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >For Her</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Electronics</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="d-flex" style="width: 256px">
+          <input class="form-control border rounded-pill" type="search"
+          placeholder="Search our catalog" id=search-input"
+          style="margin-right:0.5rem"/>
+          <button
+            class="btn btn-outline-dark border rounded-pill"
+            type="button"
+          >
+            <ion-icon name="search-outline" style="display: flex"></ion-icon>
+          </button>
+        </div>
+        <ion-icon
+          name="menu"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          class="navbar-toggler p-0"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          style="border: 0rem"
+        ></ion-icon>
+      </div>
+    </nav>
+    <div class="container my-5">
+      <div
+        class="accordion accordion-flush"
+        id="accordionFlushExample"
+        style="border: 1px solid rgba(0, 0, 0, 0.1)"
+      >
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseOne"
+              aria-expanded="false"
+              aria-controls="flush-collapseOne"
+            >
+              What is Eufloria?
+            </button>
+          </h2>
+          <div
+            id="flush-collapseOne"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingOne"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              Eufloria is an online flowers platform based out of Egypt (1 year
+              old) that sells flower arrangements and was established with a
+              mission of 'Bringing your feelings to life'. A while ago, we've
+              made charity the backbone of our mission, where we extend 1% of
+              all revenue we make to doing good for the communities we operate
+              in. It takes just few clicks from our platform to place an order
+              have it delivered within a couple of hours.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseTwo"
+              aria-expanded="false"
+              aria-controls="flush-collapseTwo"
+            >
+              What does Eufloria do?
+            </button>
+          </h2>
+          <div
+            id="flush-collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingTwo"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              Eufloria sources and designs the best flower arrangements and
+              displays them over our platform for customers to choose from. Once
+              a bouquet is selected, Eufloria prepares the arrangemetns and does
+              the last mile delivery of it.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseThree"
+              aria-expanded="false"
+              aria-controls="flush-collapseThree"
+            >
+              What is Celebrity Arrangements?
+            </button>
+          </h2>
+          <div
+            id="flush-collapseThree"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingThree"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              Celebrity arrangements is category on our platform that allows
+              celebrities to create their own arrangements and list them on
+              Floward. You now can send your loved ones a bouquet designed by
+              popular celebrities.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingfour">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapsefour"
+              aria-expanded="false"
+              aria-controls="flush-collapsefour"
+            >
+              Can I place an order without creating an account?
+            </button>
+          </h2>
+          <div
+            id="flush-collapsefour"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingfour"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              Yes. You can place an 'Express Checkout' order which is an easier
+              way for newcomers to experience our online service. To order
+              without an account, continue with your ordering journey and when
+              prompted to login choose 'Express Checkout' option. Provide your
+              name, mobile number and your address at the checkout page! The
+              purpose of this service is to give a chance to all newcomers to
+              test our service and experience its simplicity, efficiency and
+              reliability. Once familiar with our service, you can simply create
+              an account to access all the added value features and benefit from
+              a personalized ordering experience.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingfive">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapsefive"
+              aria-expanded="false"
+              aria-controls="flush-collapsefive"
+            >
+              If I placed an order, how long does it take to receive the order?
+            </button>
+          </h2>
+          <div
+            id="flush-collapsefive"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingfive"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              We offer each delivery within 2 hours.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingsix">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapsesix"
+              aria-expanded="false"
+              aria-controls="flush-collapsesix"
+            >
+              Can I have multiple addresses into my account?
+            </button>
+          </h2>
+          <div
+            id="flush-collapsesix"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingsix"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              Yes. You can add as many addresses as you need to a single
+              account. Go to Saved Addresses and click on 'Add New Address'
+              button.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingseven">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseseven"
+              aria-expanded="false"
+              aria-controls="flush-collapseseven"
+            >
+              Can I do one order with different dates?
+            </button>
+          </h2>
+          <div
+            id="flush-collapseseven"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingseven"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              Indeed you may.You can now have multiple delivery dates in one
+              order which will serve you better especially for subscriptions.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingeight">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseeight"
+              aria-expanded="false"
+              aria-controls="flush-collapseeight"
+            >
+              Can I track my order?
+            </button>
+          </h2>
+          <div
+            id="flush-collapseeight"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingeight"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              Eufloria is now the 1st and only online flowers platform in the
+              region that enables users to track their bouquets from their
+              phones.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingnine">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapsenine"
+              aria-expanded="false"
+              aria-controls="flush-collapsenine"
+            >
+              What is Bundles?
+            </button>
+          </h2>
+          <div
+            id="flush-collapsenine"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingnine"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              Beyond carefully selected flower arrangements to choose from, you
+              can now add chocolates, cakes and balloons to your arrangements or
+              choose from our bundles section ready made arrangements with these
+              items.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingten">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseten"
+              aria-expanded="false"
+              aria-controls="flush-collapseten"
+            >
+              How can I contact Eufloria?
+            </button>
+          </h2>
+          <div
+            id="flush-collapseten"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingten"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              You can contact us anytime through live chat or email or call our
+              hotline number during our working hours Sunday to Thursday
+              9AM-9PM.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="background-color: #190912">
+      <footer class="container py-4">
+        <div class="row">
+          <div class="col">
+            <h6 class="display-6" style="color: #f857b5">Get to Know Us</h6>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="about-us.html" class="nav-link p-0 footer-link"
+                  >About Us</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 footer-link">Careers</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="faq.html" class="nav-link p-0 footer-link">FAQ</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="contact-us.html" class="nav-link p-0 footer-link"
+                  >Contact Us</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a
+                  href="terms-and-conditions.html"
+                  class="nav-link p-0 footer-link"
+                  >Terms & Conditions</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link p-0 footer-link">Partner With Us</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col">
+            <form>
+              <h6 class="display-6" style="color: #f857b5">Join The Bunch</h6>
+              <p class="lead" style="color: rgba(255, 255, 255, 0.6)">
+                Never miss out on our exclusive offers and promotions by
+                subscribing to our monthly digest.
+              </p>
+              <div class="d-flex">
+                <input class="form-control border rounded-pill
+                newsLetter-control" type="email" placeholder="Email address"
+                id=newsletter-input" style="margin-right:0.5rem"/>
+                <button
+                  class="btn btn-outline-light border rounded-pill"
+                  type="submit"
+                  onclick="validate()"
+                >
+                  Subscribe
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </footer>
+      <div style="border-top: 1px solid rgba(255, 255, 255, 0.1)">
+        <footer
+          class="d-flex flex-wrap justify-content-between align-items-center py-4 container"
+        >
+          <div class="col-md-4 d-flex align-items-center">
+            <a
+              href="/"
+              class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1"
+            >
+              <img
+                src="Assets/Icon/Light/eufloria.svg"
+                alt="Euphoria"
+                style="
+                  width: 3rem;
+                  filter: brightness(0) saturate(100%) invert(100%) sepia(100%)
+                    saturate(0%) hue-rotate(181deg) brightness(103%)
+                    contrast(105%);
+                  opacity: 0.38;
+                "
+              />
+            </a>
+            <span class="mb-3 mb-md-0" style="color: rgba(255, 255, 255, 0.38)"
+              >© 2022 Eufloria, Inc</span
+            >
+          </div>
+
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3">
+              <a href="#" style="color: rgba(255, 255, 255, 0.38)"
+                ><ion-icon name="logo-twitter"></ion-icon
+              ></a>
+            </li>
+            <li class="ms-3">
+              <a href="#" style="color: rgba(255, 255, 255, 0.38)"
+                ><ion-icon name="logo-instagram"></ion-icon
+              ></a>
+            </li>
+            <li class="ms-3">
+              <a href="#" style="color: rgba(255, 255, 255, 0.38)"
+                ><ion-icon name="logo-facebook"></ion-icon
+              ></a>
+            </li>
+          </ul>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/Assets/Icon/Dark/eufloria.svg"
+    />
+    <title>Eufloria | Home</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      input[type="search"]::-webkit-search-cancel-button {
+        -webkit-appearance: none;
+        width: 1.5rem;
+        height: 1.5rem;
+        background: url(/Assets/Icon/Ui/close-outline.svg);
+      }
+
+      .form-control:focus {
+        box-shadow: 0 0 0.25rem 0.125rem #006555;
+      }
+
+      .newsLetter-control:focus {
+        box-shadow: 0 0 0.25rem 0.125rem #f857b5;
+      }
+
+      .carousel-item {
+        height: 75vh;
+        background: black;
+        color: white;
+        position: relative;
+        background-position: center;
+        background-size: cover;
+      }
+
+      .carousel-container {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+      }
+
+      .overlay-image {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 0;
+        background-position: center;
+        background-size: cover;
+        opacity: 0.6;
+      }
+
+      .prev-group {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 0;
+      }
+
+      .next-group {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 0;
+      }
+
+      ion-icon {
+        font-size: 1.5rem;
+      }
+
+      .footer-link {
+        color: #00a88f;
+        opacity: 0.6;
+      }
+
+      .footer-link:hover {
+        color: #00a88f;
+        opacity: 1;
+      }
+
+      #hero-1 {
+        background-image: url(Assets/Background/Hero/bg_hero_1.jpg);
+        background-size: cover;
+        background-position: center;
+      }
+
+      .portfolio {
+        background-color: var(--section-background);
+      }
+      .portfolio .portfolio-content {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+        grid-gap: 1rem;
+      }
+      .portfolio .portfolio-content .card {
+        border-radius: 1rem;
+        background-color: #faf5f8;
+      }
+      .portfolio .portfolio-content .card img {
+        border-radius: 1rem;
+        box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.4);
+      }
+      .portfolio .portfolio-content .card .info {
+        margin: 0;
+        padding: 1rem;
+      }
+      .portfolio .portfolio-content .card .info p {
+        color: rgba(0, 0, 0, 0.38);
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <nav class="navbar navbar-expand-sm navbar-light p-16">
+      <div class="container">
+        <a class="navbar-brand p-0" href="home.html" style="width: 25%">
+          <img
+            src="Assets/Logo/Hybrid/Colored/Dark/Eufloria.svg"
+            alt="Eufloria"
+            class="brand_logo"
+          />
+        </a>
+        <div style="display: flex">
+          <a
+            class="btn text-dark p-0"
+            href="#"
+            role="button"
+            style="border-radius: 0rem; margin-right: 0.5rem"
+            ><div style="display: flex">
+              <ion-icon
+                name="log-in-outline"
+                style="padding-right: 0.25rem"
+              ></ion-icon
+              >Login
+            </div></a
+          >
+          <div class="vr" style="background-color: black"></div>
+          <a
+            class="btn text-dark p-0"
+            href="#"
+            role="button"
+            style="border-radius: 0rem; margin-left: 0.5rem"
+            >العربية</a
+          >
+        </div>
+      </div>
+    </nav>
+    <nav
+      class="navbar navbar-expand-lg navbar-light pt-0 pb-16 pl-16 pr-16"
+      style="border-bottom: 1px solid rgba(0, 0, 0, 0.1)"
+    >
+      <div class="container">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav" id="navItemGroup">
+            <li class="nav-item">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                style="padding: 0rem 1rem 0rem 0rem"
+              >
+                Flowers & Plants
+              </a>
+              <div
+                class="dropdown-menu w-100 mt-0"
+                aria-labelledby="navbarDropdown"
+                style="
+                  border-radius: 1rem;
+                  border-top-left-radius: 0;
+                  border-top-right-radius: 0;
+                  border: 1px solid rgba(0, 0, 0, 0.1);
+                "
+              >
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-6 col-lg-3">
+                      <div class="list-group list-group-flush">
+                        <h6
+                          class="font-weight-bold dropdown-header p-0"
+                          style="margin: 0.5rem 0rem; color: #97326d"
+                        >
+                          Product Type
+                        </h6>
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Only Flowers</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Hand-Tied Bouquets</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Letterbox</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Flowers in Baskets</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Plants</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Flowers in Vases</a
+                        >
+                      </div>
+                    </div>
+                    <div
+                      class="col-md-6 col-lg-3"
+                      style="padding-bottom: 0.5rem"
+                    >
+                      <div class="list-group list-group-flush">
+                        <h6
+                          class="font-weight-bold dropdown-header p-0"
+                          style="margin: 0.5rem 0rem; color: #97326d"
+                        >
+                          Flower Type
+                        </h6>
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Roses</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Lilies</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Tulips</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Hydrangea</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Carnations</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Chrysanthemums</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Baby Roses</a
+                        >
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                      <div class="list-group list-group-flush">
+                        <h6
+                          class="font-weight-bold dropdown-header p-0"
+                          style="margin: 0.5rem 0rem; color: #97326d"
+                        >
+                          Flower Color
+                        </h6>
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Red</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >White</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Purple</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Yellow</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Pink</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Blue</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Orange</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Peach</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Fuchsia</a
+                        >
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                      <div class="list-group list-group-flush">
+                        <h6
+                          class="font-weight-bold dropdown-header p-0"
+                          style="margin: 0.5rem 0rem; color: #97326d"
+                        >
+                          Occasions
+                        </h6>
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Happy Birthday</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >I Love You</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Get Well Soon</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Congratulations</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Anniversary</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >New Baby</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                style="padding: 0rem 1rem 0rem 0rem"
+              >
+                Gifts & Bundles
+              </a>
+              <div
+                class="dropdown-menu w-100 mt-0"
+                aria-labelledby="navbarDropdown"
+                style="
+                  border-radius: 1rem;
+                  border-top-left-radius: 0;
+                  border-top-right-radius: 0;
+                  border: 1px solid rgba(0, 0, 0, 0.1);
+                "
+              >
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-6 col-lg-3">
+                      <div class="list-group list-group-flush">
+                        <h6
+                          class="font-weight-bold dropdown-header p-0"
+                          style="margin: 0.5rem 0rem; color: #97326d"
+                        >
+                          Food & Drink
+                        </h6>
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Dates</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Coffee and tea</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Letterbox</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Chocolates</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Cakes</a
+                        >
+                      </div>
+                    </div>
+                    <div
+                      class="col-md-6 col-lg-3"
+                      style="padding-bottom: 0.5rem"
+                    >
+                      <div class="list-group list-group-flush">
+                        <h6
+                          class="font-weight-bold dropdown-header p-0"
+                          style="margin: 0.5rem 0rem; color: #97326d"
+                        >
+                          Fragrance & Beauty
+                        </h6>
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Bath & Body</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Perfume</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Candles & Diffusers</a
+                        >
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                      <div class="list-group list-group-flush">
+                        <h6
+                          class="font-weight-bold dropdown-header p-0"
+                          style="margin: 0.5rem 0rem; color: #97326d"
+                        >
+                          Jewelry
+                        </h6>
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Watches</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Jewelry</a
+                        >
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                      <div class="list-group list-group-flush">
+                        <h6
+                          class="font-weight-bold dropdown-header p-0"
+                          style="margin: 0.5rem 0rem; color: #97326d"
+                        >
+                          More
+                        </h6>
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Flowers and Jewelry</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Baby & Toys</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >For Him</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >For Her</a
+                        >
+                        <a
+                          href=""
+                          class="list-group-item list-group-item-action p-0"
+                          >Electronics</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="d-flex" style="width: 256px">
+          <input class="form-control border rounded-pill" type="search"
+          placeholder="Search our catalog" id=search-input"
+          style="margin-right:0.5rem"/>
+          <button
+            class="btn btn-outline-dark border rounded-pill"
+            type="button"
+          >
+            <ion-icon name="search-outline" style="display: flex"></ion-icon>
+          </button>
+        </div>
+        <ion-icon
+          name="menu"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          class="navbar-toggler p-0"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          style="border: 0rem"
+        ></ion-icon>
+      </div>
+    </nav>
+
+    <div
+      id="homeCarousel"
+      class="carousel slide"
+      data-bs-ride="carousel"
+      data-bs-interval="5000"
+    >
+      <ol class="carousel-indicators">
+        <li
+          data-bs-target="#homeCarousel"
+          data-bs-slide-to="0"
+          class="active"
+        ></li>
+        <li data-bs-target="#homeCarousel" data-bs-slide-to="1"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div
+            class="overlay-image"
+            style="
+              background-image: url(https://images.pexels.com/photos/2959192/pexels-photo-2959192.jpeg?cs=srgb&dl=pexels-trung-nguyen-2959192.jpg&fm=jpg&w=1920&h=1282&_gl=1*uxap11*_ga*NzkxMDIyNjUuMTY3MTQwMzQxMQ..*_ga_8JE65Q40S6*MTY3MTQwNzk4MS4yLjEuMTY3MTQwODk4Ny4wLjAuMA..);
+            "
+          ></div>
+          <div class="container carousel-container">
+            <h1>
+              <strong>The Gift That Keeps On Giving</strong>
+            </h1>
+            <p class="lead">
+              Spark the love with the help of our floral arrangements and
+              awe-inspiring gifts collection.
+            </p>
+            <a
+              href="#"
+              class="btn btn-lg rounded-pill"
+              style="background-color: #00a88f; color: black"
+            >
+              Shop Now
+            </a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div
+            class="overlay-image"
+            style="
+              background-image: url(https://images.pexels.com/photos/3171823/pexels-photo-3171823.jpeg?cs=srgb&dl=pexels-davide-de-giovanni-3171823.jpg&fm=jpg&w=1920&h=1280&_gl=1*cjzyvx*_ga*NzkxMDIyNjUuMTY3MTQwMzQxMQ..*_ga_8JE65Q40S6*MTY3MTQwNzk4MS4yLjEuMTY3MTQxMTc1NC4wLjAuMA..);
+            "
+          ></div>
+          <div class="container carousel-container">
+            <h1>
+              <strong>A Special Gift for a Special Day</strong>
+            </h1>
+            <p class="lead">
+              Make a birthday happier than ever with an unforgettable gift from
+              our floral arrangements and awe-inspiring gifts collection.
+            </p>
+            <a
+              href="#"
+              class="btn btn-lg rounded-pill"
+              style="background-color: #00a88f; color: black"
+            >
+              Shop Now
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="prev-group">
+        <a
+          href="#homeCarousel"
+          class="carousel-control-prev"
+          role="button"
+          data-bs-slide="prev"
+        >
+          <span class="visually-hidden">Previous</span>
+          <ion-icon name="chevron-back-outline" aria-hidden="true"></ion-icon>
+        </a>
+      </div>
+      <div class="next-group">
+        <a
+          href="#homeCarousel"
+          class="carousel-control-next"
+          role="button"
+          data-bs-slide="next"
+        >
+          <span class="visually-hidden">Next</span>
+          <ion-icon
+            name="chevron-forward-outline"
+            aria-hidden="true"
+          ></ion-icon>
+        </a>
+      </div>
+    </div>
+    <div class="container px-4 py-4" id="featured-3">
+      <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+        <div class="feature col">
+          <ion-icon
+            name="rose"
+            style="
+              font-size: 3rem;
+              padding: 1rem;
+              background-color: #006555;
+              color: white;
+              border-radius: 1rem;
+              margin-bottom: 0.5rem;
+            "
+          ></ion-icon>
+          <h2>Enchanting Flowers</h2>
+          <p>
+            The flowers are sourced from reliable growers and carefully arranged
+            by an artful group of florists.
+          </p>
+        </div>
+        <div class="feature col">
+          <ion-icon
+            name="speedometer"
+            style="
+              font-size: 3rem;
+              padding: 1rem;
+              background-color: #006555;
+              color: white;
+              border-radius: 1rem;
+              margin-bottom: 0.5rem;
+            "
+          ></ion-icon>
+          <h2>Express Delivery</h2>
+          <p>
+            You can be confident that your order is guaranteed same-day delivery
+            upon confirmation.
+          </p>
+        </div>
+        <div class="feature col">
+          <ion-icon
+            name="happy"
+            style="
+              font-size: 3rem;
+              padding: 1rem;
+              background-color: #006555;
+              color: white;
+              border-radius: 1rem;
+              margin-bottom: 0.5rem;
+            "
+          ></ion-icon>
+          <h2>Assured Satisfaction</h2>
+          <p>
+            We must ensure your utmost satisfaction with our service before and
+            after delivering your order successfully.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="hero-1">
+      <div class="container d-flex justify-content-center py-5">
+        <div
+          class="p-5"
+          style="
+            display: inline-block;
+            backdrop-filter: saturate(135%) blur(1rem) brightness(95%);
+            border-radius: 1rem;
+          "
+        >
+          <h1
+            class="display-5 lh-1 mb-3"
+            style="text-align: center; font-weight: 500"
+          >
+            Magnificent Floral Collection
+          </h1>
+          <p class="lead" style="text-align: center">
+            Don't let a moment go unnoticed. <br />
+            Show your loved ones how much you care with our brand-new floral
+            collection and spread the love!
+          </p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+            <button
+              type="button"
+              class="btn btn btn-lg px-4 me-md-2 rounded-pill"
+              style="background-color: #b16592; color: white"
+            >
+              Discover The Whole Collection
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="portfolio"
+      id="portfolio"
+      style="border: 1px solid rgba(0, 0, 0, 0.1)"
+    >
+      <div class="container py-5">
+        <h2 class="special-heading">New Arrivals</h2>
+        <p>Explore our newest floral range</p>
+        <div class="portfolio-content">
+          <div class="card">
+            <img
+              class="async"
+              src="https://floward.imgix.net/web/Files/thumPro/758f025f-7544-4c54-bd29-c518c36c132f.jpg?w=450&max-h=400&max-w=400&fit=crop&auto=format"
+            />
+            <div class="info">
+              <h4>2023 Zahra Arabic Agenda with MOKO</h4>
+              <h6 class="fw-normal">EGP599</h6>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              class="async"
+              src="https://floward.imgix.net/web/Files/thumPro/58e70acc-404d-4ccc-a193-280cbe0254c6.jpg?w=450&max-h=400&max-w=400&fit=crop&auto=format"
+            />
+            <div class="info">
+              <h4>2023 Havan Formal Agenda with MOKO</h4>
+              <h6 class="fw-normal">EGP799</h6>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              class="async"
+              src="https://floward.imgix.net/web/Files/thumPro/bc904ad1-3ddf-46f5-9109-392c84226692.jpg?w=450&max-h=400&max-w=400&fit=crop&auto=format"
+            />
+            <div class="info">
+              <h4>2023 Happy Life Agenda with MOKO</h4>
+              <h6 class="fw-normal">EGP599</h6>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              class="async"
+              src="https://floward.imgix.net/web/Files/thumPro/9035bb1b-1bdc-440c-9e89-d0d821d5f50d.jpg?w=450&max-h=400&max-w=400&fit=crop&auto=format"
+            />
+            <div class="info">
+              <h4>2023 Royal Blue Arabic Agenda with MOKO</h4>
+              <h6 class="fw-normal">EGP599</h6>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              class="async"
+              src="https://floward.imgix.net/web/Files/thumPro/9ad2e5e4-dc17-45bd-b330-e970834d8896.jpg?w=450&max-h=400&max-w=400&fit=crop&auto=format"
+            />
+            <div class="info">
+              <h4>2023 Zahra Arabic Agenda with Sistema and Milk Chocolate</h4>
+              <h6 class="fw-normal">EGP849</h6>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              class="async"
+              src="https://floward.imgix.net/web/Files/thumPro/164f4c2f-f87c-49bc-8786-8cff2e6ed599.jpg?w=450&max-h=400&max-w=400&fit=crop&auto=format"
+            />
+            <div class="info">
+              <h4>2023 Havan Formal Agenda With Atom and Milk Chocolate</h4>
+              <h6 class="fw-normal">EGP899</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="portfolio" id="portfolio">
+      <div class="container py-5">
+        <h2 class="special-heading">Bestsellers</h2>
+        <p>Explore our most popular blooms</p>
+        <div class="portfolio-content">
+          <div class="card">
+            <img
+              class="async"
+              src="https://floward.imgix.net/web/Files/thumPro/ce1b9a35-15af-42a7-ba2e-89dc2da60afd.jpg?w=450&max-h=400&max-w=400&fit=crop&auto=format"
+            />
+            <div class="info">
+              <h4>Love</h4>
+              <h6 class="fw-normal">1899EGP</h6>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              class="async"
+              src="https://floward.imgix.net/web/Files/thumPro/637617582323027164.jpg?w=450&max-h=400&max-w=400&fit=crop&auto=format"
+            />
+            <div class="info">
+              <h4>Devotion</h4>
+              <h6 class="fw-normal">599EGP</h6>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              class="async"
+              src="https://floward.imgix.net/web/Files/thumPro/c0efe607-8ee5-4473-b8c1-d5672fe4efe5.jpg?w=450&max-h=400&max-w=400&fit=crop&auto=format"
+            />
+            <div class="info">
+              <h4>150 Red Roses</h4>
+              <h6 class="fw-normal">7999EGP</h6>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              class="async"
+              src="https://floward.imgix.net/web/Files/thumPro/637363759602864213.jpg?w=450&max-h=400&max-w=400&fit=crop&auto=format"
+            />
+            <div class="info">
+              <h4>35 Roses Hand Bouquet</h4>
+              <h6 class="fw-normal">1749EGP</h6>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              class="async"
+              src="https://floward.imgix.net/web/Files/thumPro/5d506e60-0a43-4b29-80ff-1fc64730f950.jpg?w=450&max-h=400&max-w=400&fit=crop&auto=format"
+            />
+            <div class="info">
+              <h4>Joy</h4>
+              <h6 class="fw-normal">6499EGP</h6>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              class="async"
+              src="https://floward.imgix.net/web/Files/thumPro/637402555682281085.jpg?w=450&max-h=400&max-w=400&fit=crop&auto=format"
+            />
+            <div class="info">
+              <h4>White Lilies</h4>
+              <h6 class="fw-normal">1499EGP</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="background-color: #190912">
+      <footer class="container py-4">
+        <div class="row">
+          <div class="col">
+            <h6 class="display-6" style="color: #f857b5">Get to Know Us</h6>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="about-us.html" class="nav-link p-0 footer-link"
+                  >About Us</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 footer-link">Careers</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="faq.html" class="nav-link p-0 footer-link">FAQ</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="contact-us.html" class="nav-link p-0 footer-link"
+                  >Contact Us</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a
+                  href="terms-and-conditions.html"
+                  class="nav-link p-0 footer-link"
+                  >Terms & Conditions</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link p-0 footer-link">Partner With Us</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col">
+            <form>
+              <h6 class="display-6" style="color: #f857b5">Join The Bunch</h6>
+              <p class="lead" style="color: rgba(255, 255, 255, 0.6)">
+                Never miss out on our exclusive offers and promotions by
+                subscribing to our monthly digest.
+              </p>
+              <div class="d-flex">
+                <input class="form-control border rounded-pill
+                newsLetter-control" type="email" placeholder="Email address"
+                id=newsletter-input" style="margin-right:0.5rem"/>
+                <button
+                  class="btn btn-outline-light border rounded-pill"
+                  type="submit"
+                  onclick="validate()"
+                >
+                  Subscribe
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </footer>
+      <div style="border-top: 1px solid rgba(255, 255, 255, 0.1)">
+        <footer
+          class="d-flex flex-wrap justify-content-between align-items-center py-4 container"
+        >
+          <div class="col-md-4 d-flex align-items-center">
+            <a
+              href="/"
+              class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1"
+            >
+              <img
+                src="Assets/Icon/Light/eufloria.svg"
+                alt="Euphoria"
+                style="
+                  width: 3rem;
+                  filter: brightness(0) saturate(100%) invert(100%) sepia(100%)
+                    saturate(0%) hue-rotate(181deg) brightness(103%)
+                    contrast(105%);
+                  opacity: 0.38;
+                "
+              />
+            </a>
+            <span class="mb-3 mb-md-0" style="color: rgba(255, 255, 255, 0.38)"
+              >© 2022 Eufloria, Inc</span
+            >
+          </div>
+
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3">
+              <a href="#" style="color: rgba(255, 255, 255, 0.38)"
+                ><ion-icon name="logo-twitter"></ion-icon
+              ></a>
+            </li>
+            <li class="ms-3">
+              <a href="#" style="color: rgba(255, 255, 255, 0.38)"
+                ><ion-icon name="logo-instagram"></ion-icon
+              ></a>
+            </li>
+            <li class="ms-3">
+              <a href="#" style="color: rgba(255, 255, 255, 0.38)"
+                ><ion-icon name="logo-facebook"></ion-icon
+              ></a>
+            </li>
+          </ul>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
